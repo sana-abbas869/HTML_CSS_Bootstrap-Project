@@ -1,0 +1,159 @@
+:root{
+    --primary:#fea116 !important;
+    --light:#f1f8ff !important;
+    --dark:#0f172b !important;
+}
+body{
+    background-color: #fff;
+}
+/* button */
+.btn{
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn.btn-primary,
+.btn.btn-secondary{
+    color: #ffffff;
+}
+.btn.btn-primary{
+    background: #fea116;
+    border-color: #f1f8ff;
+}
+
+
+/* header  section */
+.carousel-caption{
+  
+ top:0;
+ left:0;
+ right: 0;
+ bottom: 0;
+  background: rgba(15,23,43,0.7);
+  z-index: 1;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 10%;
+   
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width: 3rem;
+    height: 3rem;
+}
+/* booking section */
+.booking{
+    position: relative;
+    margin-top: -50px !important;
+    z-index: 1;
+}
+/* section  */
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+.section-title::before{
+    position: absolute;
+    content: " ";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+.section-title::after{
+    position: absolute;
+    content: " ";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+
+}
+.section-title.text-start::before,
+.section-title.text-end::after{
+    display: none;
+}
+
+
+
+
+
+/* about us section */
+
+h6.text-primary{
+    color: #fea116 !important;
+}
+span.text-primary{
+    color: #fea116 !important;
+}
+i.text-primary{
+    color: #fea116 !important;
+}
+
+/*  services section  */
+
+.service-item{
+    height: 320px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 0 45px rgba(0,0,0,0.08);
+    transition: 0.5s;
+}
+.service-item:hover{
+    background: var(--primary);
+}
+
+.service-icon{
+    margin: 0 auto 30px auto;
+    width: 65px;
+    height: 65px;
+    transform: 0.5s;
+}
+.service-item i,
+.service-item h6,
+.service-item p{
+    transition: 0.5s;
+}
+.service-item:hover i,
+.service-item:hover h6,
+.service-item:hover p{
+background: #fff;
+}
+
+/* testimonial section */
+.testmonial{
+    background: linear-gradient(rgba(15,23,43,0.7),rgba(15,23,43,0.7)),url(../Images/t-carosel.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.testmonial-carousel{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.testmonial-carousel .testmonial-item{
+padding: 30px;
+}
+
+.testmonial-carousel .owl-nav{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top:calc( 50 - 20px);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
